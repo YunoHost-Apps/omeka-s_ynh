@@ -66,9 +66,9 @@ then
 
 	cp "$final_path.old/config/local.config.php" "$final_path/config/local.config.php"
 	cp "$final_path.old/config/database.ini" "$final_path/config/database.ini"
-	cp "$final_path.old/modules" "$final_path/modules"
-	cp "$final_path.old/themes" "$final_path/themes"
-	cp "$final_path.old/files" "$final_path/files"
+	cp -r "$final_path.old/modules" "$final_path/modules"
+	cp -r "$final_path.old/themes" "$final_path/themes"
+	cp -r "$final_path.old/files" "$final_path/files"
 	# delete temp directory
 	ynh_secure_remove "$final_path.old"
 fi
