@@ -27,7 +27,7 @@ Web publication system for universities, galleries, libraries, archives, and mus
 
 ## Documentation and resources
 
-* Official app website: https://omeka.org/
+* Official app website: https://omeka.org/s/
 * Official user documentation: https://yunohost.org/apps
 * Official admin documentation: https://omeka.org/s/docs/user-manual/
 * Upstream app code repository: https://github.com/omeka/omeka-s
