@@ -1,0 +1,53 @@
+{
+    "name": "Omeka",
+    "id": "omeka",
+    "packaging_format": 1,
+    "description": {
+        "en": "Web publication system for universities, galleries, libraries, archives, and museums",
+        "fr": "Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées "
+    },
+    "version": "3.0.2~ynh1",
+    "url": "https://omeka.org/",
+    "upstream": {
+        "license": "GPL-3.0",
+        "website": "https://omeka.org/",
+        "demo": "https://omeka.org/s/download/#sandbox",
+        "admindoc": "https://omeka.org/s/docs/user-manual/",
+        "userdoc": "https://yunohost.org/apps",
+        "code": "https://github.com/omeka/omeka-s"
+    },
+    "license": "GPL-3.0",
+    "maintainer": {
+        "name": "",
+        "email": ""
+    },
+    "requirements": {
+        "yunohost": ">= 4.2.4"
+    },
+    "multi_instance": true,
+    "services": [
+        "nginx",
+        "php7.3-fpm",
+        "mysql"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "example": "example.com"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "example": "/omeka",
+                "default": "/omeka"
+            },
+            {
+                "name": "is_public",
+                "type": "boolean",
+                "default": true
+            }
+        ]
+    }
+}

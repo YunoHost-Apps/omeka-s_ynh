@@ -1,0 +1,7 @@
+user     = "__DB_NAME__"
+password = "__DB_PWD__"
+dbname   = "__DB_NAME__"
+host     = "localhost"
+;port     = 
+;unix_socket = 
+;log_path = 
