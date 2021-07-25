@@ -9,14 +9,14 @@
     "version": "3.0.2~ynh1",
     "url": "https://omeka.org/",
     "upstream": {
-        "license": "GPL-3.0",
-        "website": "https://omeka.org/",
+        "license": "AGPL-3.0-only",
+        "website": "https://omeka.org/s/",
         "demo": "https://omeka.org/s/download/#sandbox",
         "admindoc": "https://omeka.org/s/docs/user-manual/",
         "userdoc": "https://yunohost.org/apps",
         "code": "https://github.com/omeka/omeka-s"
     },
-    "license": "GPL-3.0",
+    "license": "AGPL-3.0-only",
     "maintainer": {
         "name": "",
         "email": ""
