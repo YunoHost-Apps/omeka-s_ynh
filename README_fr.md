@@ -1,12 +1,12 @@
-# Omeka pour YunoHost
+# Omeka S pour YunoHost
 
 [![Niveau d'intégration](https://dash.yunohost.org/integration/omeka.svg)](https://dash.yunohost.org/appci/app/omeka) ![](https://ci-apps.yunohost.org/ci/badges/omeka.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/omeka.maintain.svg)  
-[![Installer Omeka avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=omeka)
+[![Installer Omeka S avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=omeka)
 
 *[Read this readme in english.](./README.md)*
 *[Lire ce readme en français.](./README_fr.md)*
 
-> *Ce package vous permet d'installer Omeka rapidement et simplement sur un serveur YunoHost.
+> *Ce package vous permet d'installer Omeka S rapidement et simplement sur un serveur YunoHost.
 Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
 
 ## Vue d'ensemble
