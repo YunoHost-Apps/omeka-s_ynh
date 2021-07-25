@@ -11,7 +11,7 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 ## Vue d'ensemble
 
-Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées 
+Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées
 
 **Version incluse :** 3.0.2~ynh1
 
