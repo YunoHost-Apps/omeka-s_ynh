@@ -4,7 +4,7 @@
     "packaging_format": 1,
     "description": {
         "en": "Web publication system for universities, galleries, libraries, archives, and museums",
-        "fr": "Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées "
+        "fr": "Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées"
     },
     "version": "3.0.2~ynh1",
     "url": "https://omeka.org/",
