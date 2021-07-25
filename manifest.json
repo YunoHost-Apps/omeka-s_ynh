@@ -54,6 +54,15 @@
                 "default": true
             },
             {
+                "name": "title",
+                "type": "string",
+                "ask": {
+                    "en": "Choose a title for the web publication you want to create",
+                    "fr": "Choisissez le titre pour la publication que vous souhaitez créer"
+                },
+                "default": "titre"
+            },
+            {
                 "name": "language",
                 "type": "string",
                 "ask": {
