@@ -136,6 +136,38 @@ ynh_script_progression --message="Configuring log rotation..." --weight=1
 ynh_use_logrotate
 
 #=================================================
+# SETUP APPLICATION WITH CURL
+#=================================================
+ynh_script_progression --message="Setuping application with CURL..."
+
+# Set the app as temporarily public for curl call
+ynh_script_progression --message="Configuring SSOwat..."
+# Making the app public for curl
+ynh_permission_update --permission="main" --add="visitors"
+
+# Reload NGINX
+ynh_systemd_action --service_name=nginx --action=reload
+
+# Installation with curl
+ynh_script_progression --message="Finalizing installation..." --weight=10
+
+# Installation with cURL
+installUrl="/admin/install.php?submit"
+
+ynh_local_curl $installUrl "install=2" "db_type=mysqli" "hostname=localhost" "db_username=$db_user" "db_password=$db_pwd" "database_name=$db_name" "admin_username=" "admin_password=" "db_table_prefix=$db_name" "db_table_plugin_prefix=plugin" "db_table_suffix=_table" "timezone=UTC"
+
+# Remove the `admin/` directory from within the MantisBT installation path.
+# The scripts within this directory should not be accessible on a live MantisBT site
+# or on any installation that is accessible via the Internet.
+ynh_secure_remove --file="$final_path/admin"
+
+# Set the user chosen at installation as administrator
+ynh_mysql_connect_as --user="$db_user" --password="$db_pwd" --database="$db_name" <<< "UPDATE ${db_name}_user_table SET username = '$admin' WHERE id = 1;"
+
+# Remove the public access
+ynh_permission_update --permission="main" --remove="visitors"
+
+#=================================================
 # SETUP SSOWAT
 #=================================================
 ynh_script_progression --message="Configuring permissions..." --weight=1
