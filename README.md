@@ -5,8 +5,8 @@ It shall NOT be edited by hand.
 
 # Omeka S for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/omeka.svg)](https://dash.yunohost.org/appci/app/omeka) ![](https://ci-apps.yunohost.org/ci/badges/omeka.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/omeka.maintain.svg)  
-[![Install Omeka S with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=omeka)
+[![Integration level](https://dash.yunohost.org/integration/omeka-s.svg)](https://dash.yunohost.org/appci/app/omeka-s) ![](https://ci-apps.yunohost.org/ci/badges/omeka-s.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/omeka-s.maintain.svg)  
+[![Install Omeka S with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=omeka-s)
 
 *[Lire ce readme en français.](./README_fr.md)*
 
@@ -31,18 +31,18 @@ Web publication system for universities, galleries, libraries, archives, and mus
 * Official user documentation: https://yunohost.org/apps
 * Official admin documentation: https://omeka.org/s/docs/user-manual/
 * Upstream app code repository: https://github.com/omeka/omeka-s
-* YunoHost documentation for this app: https://yunohost.org/app_omeka
-* Report a bug: https://github.com/YunoHost-Apps/omeka_ynh/issues
+* YunoHost documentation for this app: https://yunohost.org/app_omeka-s
+* Report a bug: https://github.com/YunoHost-Apps/omeka-s_ynh/issues
 
 ## Developer info
 
-Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/omeka_ynh/tree/testing).
+Please send your pull request to the [testing branch](https://github.com/YunoHost-Apps/omeka-s_ynh/tree/testing).
 
 To try the testing branch, please proceed like that.
 ```
-sudo yunohost app install https://github.com/YunoHost-Apps/omeka_ynh/tree/testing --debug
+sudo yunohost app install https://github.com/YunoHost-Apps/omeka-s_ynh/tree/testing --debug
 or
-sudo yunohost app upgrade omeka -u https://github.com/YunoHost-Apps/omeka_ynh/tree/testing --debug
+sudo yunohost app upgrade omeka-s -u https://github.com/YunoHost-Apps/omeka-s_ynh/tree/testing --debug
 ```
 
 **More info regarding app packaging:** https://yunohost.org/packaging_apps
