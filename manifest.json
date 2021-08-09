@@ -1,6 +1,6 @@
 {
     "name": "Omeka S",
-    "id": "omeka",
+    "id": "omeka-s",
     "packaging_format": 1,
     "description": {
         "en": "Web publication system for universities, galleries, libraries, archives, and museums",
