@@ -17,7 +17,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 Web publication system for universities, galleries, libraries, archives, and museums
 
-**Shipped version:** 3.0.2~ynh1
+**Shipped version:** 3.1.0~ynh1
 
 **Demo:** https://omeka.org/s/download/#sandbox
 
