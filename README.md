@@ -17,7 +17,7 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 Omeka S is a web publication system for universities, galleries, libraries, archives, and museums. It consists of a local network of independently curated exhibits sharing a collaboratively built pool of items, media, and their metadata.
 
-**Shipped version:** 3.1.0~ynh1
+**Shipped version:** 3.1.1~ynh1
 
 **Demo:** https://omeka.org/s/download/#sandbox
 
@@ -28,7 +28,6 @@ Omeka S is a web publication system for universities, galleries, libraries, arch
 ## Documentation and resources
 
 * Official app website: https://omeka.org/s/
-* Official user documentation: https://yunohost.org/apps
 * Official admin documentation: https://omeka.org/s/docs/user-manual/
 * Upstream app code repository: https://github.com/omeka/omeka-s
 * YunoHost documentation for this app: https://yunohost.org/app_omeka-s
