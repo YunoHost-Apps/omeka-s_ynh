@@ -1,7 +1,6 @@
-SOURCE_URL=https://github.com/omeka/omeka-s/releases/download/v3.1.0/omeka-s-3.1.0.zip
-SOURCE_SUM=f0af24dceb9d7b4ebbd88dc15825f7bbe041d6ac433533d51f4bbecb94b67a16
+SOURCE_URL=https://github.com/omeka/omeka-s/releases/download/v3.1.1/omeka-s-3.1.1.zip
+SOURCE_SUM=5b0a3518a0a6e0fadc3489088c561718e88053cacba2cd09c5be5993afe17b4d
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=zip
 SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=
 SOURCE_EXTRACT=true
