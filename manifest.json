@@ -12,7 +12,7 @@
         "license": "AGPL-3.0-only",
         "website": "https://omeka.org/s/",
         "demo": "https://omeka.org/s/download/#sandbox",
-        "admindoc": "https://omeka.org/s/docs/user-manual/",
+        "userdoc": "https://omeka.org/s/docs/user-manual/",
         "code": "https://github.com/omeka/omeka-s"
     },
     "license": "AGPL-3.0-only",
