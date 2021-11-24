@@ -24,7 +24,7 @@ Omeka S is a web publication system for universities, galleries, libraries, arch
 ## Documentations et ressources
 
 * Site officiel de l'app : https://omeka.org/s/
-* Documentation officielle de l'admin : https://omeka.org/s/docs/user-manual/
+* Documentation officielle utilisateur : https://omeka.org/s/docs/user-manual/
 * Dépôt de code officiel de l'app : https://github.com/omeka/omeka-s
 * Documentation YunoHost pour cette app : https://yunohost.org/app_omeka-s
 * Signaler un bug : https://github.com/YunoHost-Apps/omeka-s_ynh/issues
