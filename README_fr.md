@@ -13,6 +13,11 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 Omeka S is a web publication system for universities, galleries, libraries, archives, and museums. It consists of a local network of independently curated exhibits sharing a collaboratively built pool of items, media, and their metadata.
 
+### Features
+
+- Connect to the semantic Web
+- Share with DPLA
+
 **Version incluse :** 3.1.1~ynh1
 
 **Démo :** https://omeka.org/s/download/#sandbox
@@ -24,7 +29,7 @@ Omeka S is a web publication system for universities, galleries, libraries, arch
 ## Documentations et ressources
 
 * Site officiel de l'app : https://omeka.org/s/
-* Documentation officielle de l'admin : https://omeka.org/s/docs/user-manual/
+* Documentation officielle utilisateur : https://omeka.org/s/docs/user-manual/
 * Dépôt de code officiel de l'app : https://github.com/omeka/omeka-s
 * Documentation YunoHost pour cette app : https://yunohost.org/app_omeka-s
 * Signaler un bug : https://github.com/YunoHost-Apps/omeka-s_ynh/issues
