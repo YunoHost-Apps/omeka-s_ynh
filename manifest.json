@@ -42,6 +42,16 @@
                 "default": "/omeka"
             },
             {
+                "name": "language",
+                "type": "string",
+                "ask": {
+                    "en": "Choose the application language",
+                    "fr": "Choisissez la langue de l'application"
+                },
+                "choices": ["en_US", "es", "fr", "it", "pt_PT"],
+                "default": "fr"
+            },
+            {
                 "name": "is_public",
                 "type": "boolean",
                 "help": {

@@ -1,0 +1,6 @@
+SOURCE_URL=https://github.com/biblibre/omeka-s-module-Ldap/releases/download/v0.3.2/Ldap-0.3.2.zip
+SOURCE_SUM=6f3bf160c162891a3a192d6269278f8e26fa67fbc89ba620481fe887dd48f1cd
+SOURCE_SUM_PRG=sha256sum
+SOURCE_FORMAT=zip
+SOURCE_IN_SUBDIR=true
+SOURCE_EXTRACT=true
