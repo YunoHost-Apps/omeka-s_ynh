@@ -33,12 +33,11 @@ return [
     'ldap' => [
         'adapter_options' => [
             'server1' => [
-                'host' => 'localhost',
+                'host' => 'ldap://localhost:389',
                 'username' => 'ou=users,dc=yunohost,dc=org',
-                'password' => '',
                 'bindRequiresDn' => true,
-                'baseDn' => 'ou=users,dc=yunohost,dc=org',
-                'accountFilterFormat' => '(&(|(objectclass=posixAccount))(uid={{username}})(permission=cn=__APP__.main,ou=permission,dc=yunohost,dc=org))',
+                'baseDn' => 'dc=yunohost,dc=org',
+                'accountFilterFormat' => '(&(objectClass=posixAccount)(permission=cn=__APP__.main,ou=permission,dc=yunohost,dc=org))',
                 'accountCanonicalForm' => 4,
                 'accountDomainName' => '__DOMAIN__',
             ],
