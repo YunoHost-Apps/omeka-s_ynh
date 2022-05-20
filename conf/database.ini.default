@@ -1,4 +1,4 @@
-user     = "__DB_NAME__"
+user     = "__DB_USER__"
 password = "__DB_PWD__"
 dbname   = "__DB_NAME__"
 host     = "localhost"
