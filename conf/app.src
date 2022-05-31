@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/omeka/omeka-s/releases/download/v3.2.0/omeka-s-3.2.0.zip
-SOURCE_SUM=7fe089d818595db15e06225fa48b1bfbff1787de8fb299c36aac5800929f8252
+SOURCE_URL=https://github.com/omeka/omeka-s/releases/download/v3.2.1/omeka-s-3.2.1.zip
+SOURCE_SUM=54310c4310a1b0270e158930a3e4292e4411406719dcdc32c67ec57b5ff2a624
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=zip
 SOURCE_IN_SUBDIR=true
