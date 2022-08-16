@@ -81,7 +81,7 @@ then
 	ynh_script_progression --message="Upgrading source files..." --weight=1
 
 	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$final_path" --keep="$final_path/config/local.config.php $final_path/config/database.ini $final_path/modules $final_path/themes $final_path/files"
+	ynh_setup_source --dest_dir="$final_path" --keep="config/local.config.php config/database.ini modules themes files"
 
 fi
 

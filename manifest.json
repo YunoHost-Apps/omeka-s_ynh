@@ -6,7 +6,7 @@
         "en": "Web publication system for universities, galleries, libraries, archives, and museums",
         "fr": "Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées"
     },
-    "version": "3.2.2~ynh1",
+    "version": "3.2.2~ynh2",
     "url": "https://omeka.org/",
     "upstream": {
         "license": "AGPL-3.0-only",
@@ -21,7 +21,7 @@
         "email": ""
     },
     "requirements": {
-        "yunohost": ">= 4.3.0"
+        "yunohost": ">= 11.0.9"
     },
     "multi_instance": true,
     "services": [
