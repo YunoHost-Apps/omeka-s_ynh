@@ -5,15 +5,15 @@ It shall NOT be edited by hand.
 
 # Omeka S pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/omeka-s.svg)](https://dash.yunohost.org/appci/app/omeka-s) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/omeka-s.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/omeka-s.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/omeka-s.svg)](https://dash.yunohost.org/appci/app/omeka-s) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/omeka-s.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/omeka-s.maintain.svg)  
 [![Installer Omeka S avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=omeka-s)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer Omeka S rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer Omeka S rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 Omeka S is a web publication system for universities, galleries, libraries, archives, and museums. It consists of a local network of independently curated exhibits sharing a collaboratively built pool of items, media, and their metadata.
 
@@ -22,20 +22,19 @@ Omeka S is a web publication system for universities, galleries, libraries, arch
 - Connect to the semantic Web
 - Share with DPLA
 
-**Version incluse :** 3.2.3~ynh1
-
+**Version incluse :** 4.0.0~ynh1
 
 **Démo :** https://omeka.org/s/download/#sandbox
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de Omeka S](./doc/screenshots/omeka-s.png)
+![Capture d’écran de Omeka S](./doc/screenshots/omeka-s.png)
 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://omeka.org/s/>
+* Site officiel de l’app : <https://omeka.org/s/>
 * Documentation officielle utilisateur : <https://omeka.org/s/docs/user-manual/>
-* Dépôt de code officiel de l'app : <https://github.com/omeka/omeka-s>
+* Dépôt de code officiel de l’app : <https://github.com/omeka/omeka-s>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_omeka-s>
 * Signaler un bug : <https://github.com/YunoHost-Apps/omeka-s_ynh/issues>
 
@@ -51,4 +50,4 @@ ou
 sudo yunohost app upgrade omeka-s -u https://github.com/YunoHost-Apps/omeka-s_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
