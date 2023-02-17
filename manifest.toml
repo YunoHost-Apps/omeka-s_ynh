@@ -20,8 +20,8 @@ code = "https://github.com/omeka/omeka-s"
 yunohost = ">= 11.1.7"
 architectures = "all"
 multi_instance = true
-ldap = "?"
-sso = "?"
+ldap = false
+sso = false
 disk = "50M"
 ram.build = "50M"
 ram.runtime = "50M"
@@ -35,8 +35,8 @@ ram.runtime = "50M"
     default = "/omeka"
 
     [install.init_main_permission]
-    help.en = "If enabled, Omeka S will be accessible by people who do not have an account. This can be changed later via the webadmin."
-    help.fr = "Si cette case est cochée, Omeka S sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
+    help.en = "With 'Visitors' permission, Omeka S will be accessible by people who do not have an account. This can be changed later via the webadmin."
+    help.fr = "Avec la permission 'Visiteurs', Omeka S sera accessible aux personnes n’ayant pas de compte. Vous pourrez changer ceci plus tard via la webadmin."
     type = "group"
     default = "visitors"
 
@@ -50,8 +50,8 @@ ram.runtime = "50M"
     [resources.permissions]
     main.url = "/"
 
+    [resources.apt]
+    packages = "imagemagick php8.1-mysql php8.1-gd php8.1-mbstring php8.1-xml"
+
     [resources.database]
     type = "mysql"
-
-    [resources.apt]
-    packages = "imagemagick php8.0-mysql php8.0-gd php8.0-mbstring php8.0-xml"
