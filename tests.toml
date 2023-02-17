@@ -1,0 +1,9 @@
+test_format = 1.0
+
+[default]
+
+    # -------------------------------
+    # Commits to test upgrade from
+    # -------------------------------
+
+    test_upgrade_from.894f1eb9.name = "Upgrade from 3.0.2"
