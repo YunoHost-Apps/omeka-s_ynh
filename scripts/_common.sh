@@ -6,8 +6,6 @@
 
 YNH_PHP_VERSION="8.0"
 
-#REMOVEME? pkg_dependencies="imagemagick php${YNH_PHP_VERSION}-mysql php${YNH_PHP_VERSION}-gd php${YNH_PHP_VERSION}-mbstring php${YNH_PHP_VERSION}-xml"
-
 #=================================================
 # PERSONAL HELPERS
 #=================================================
