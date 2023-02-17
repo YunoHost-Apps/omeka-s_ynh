@@ -28,7 +28,7 @@ ynh_setup_source --dest_dir="$install_dir"
 chown -R $app:www-data "$install_dir"
 
 #=================================================
-# PHP-FPM CONFIGURATION
+# SYSTEM CONFIGURATION
 #=================================================
 ynh_script_progression --message="Adding system configurations related to $app ..." --weight=1
 
