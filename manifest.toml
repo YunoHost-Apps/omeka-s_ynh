@@ -17,7 +17,7 @@ userdoc = "https://omeka.org/s/docs/user-manual/"
 code = "https://github.com/omeka/omeka-s"
 
 [integration]
-yunohost = ">= 11.1.11"
+yunohost = ">= 11.1.12"
 architectures = "all"
 multi_instance = true
 ldap = false
