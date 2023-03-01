@@ -5,7 +5,7 @@ name = "Omeka S"
 description.en = "Web publication system for universities, galleries, libraries, archives, and museums"
 description.fr = "Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées"
 
-version = "4.0.0~ynh2"
+version = "4.0.1~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -17,7 +17,7 @@ userdoc = "https://omeka.org/s/docs/user-manual/"
 code = "https://github.com/omeka/omeka-s"
 
 [integration]
-yunohost = ">= 11.1.8"
+yunohost = ">= 11.1.12"
 architectures = "all"
 multi_instance = true
 ldap = false
@@ -49,7 +49,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "imagemagick php8.1-mysql php8.1-gd php8.1-mbstring php8.1-xml"
+    packages = "mariadb-server imagemagick php8.1-mysql php8.1-gd php8.1-mbstring php8.1-xml"
 
     [resources.database]
     type = "mysql"
