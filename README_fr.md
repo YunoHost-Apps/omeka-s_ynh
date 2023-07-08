@@ -16,12 +16,12 @@ Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) po
 
 ## Vue d’ensemble
 
-Omeka S is a web publication system for universities, galleries, libraries, archives, and museums. It consists of a local network of independently curated exhibits sharing a collaboratively built pool of items, media, and their metadata.
+Omeka S est un système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées. Il consiste en un réseau local d'expositions organisées de manière indépendante partageant un pool d'éléments, de médias et de leurs métadonnées construit en collaboration.
 
-### Features
+### Caractéristiques
 
-- Connect to the semantic Web
-- Share with DPLA
+- Se connecter au Web sémantique
+- Partager avec DPLA
 
 **Version incluse :** 4.0.1~ynh3
 
