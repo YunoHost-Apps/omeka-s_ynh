@@ -44,7 +44,6 @@ then
 
 	# Download, check integrity, uncompress and patch the source from app.src
 	ynh_setup_source --dest_dir="$install_dir" --keep="config/local.config.php config/database.ini modules themes files"
-
 fi
 
 chmod -R o-rwx "$install_dir"
@@ -55,7 +54,7 @@ chown -R $app:www-data "$install_dir"
 #=================================================
 ynh_script_progression --message="Upgrading system configurations related to $app..." --weight=1
 
-ynh_add_fpm_config --phpversion=$phpversion --usage=$fpm_usage --footprint=$fpm_footprint
+ynh_add_fpm_config --usage=$fpm_usage --footprint=$fpm_footprint
 
 ynh_add_nginx_config
 

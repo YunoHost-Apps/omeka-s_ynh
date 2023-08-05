@@ -5,7 +5,7 @@ name = "Omeka S"
 description.en = "Web publication system for universities, galleries, libraries, archives, and museums"
 description.fr = "Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées"
 
-version = "4.0.1~ynh3"
+version = "4.0.3~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -17,13 +17,13 @@ userdoc = "https://omeka.org/s/docs/user-manual/"
 code = "https://github.com/omeka/omeka-s"
 
 [integration]
-yunohost = ">= 11.1.19"
+yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
 ldap = false
 sso = false
 disk = "50M"
-ram.build = "50M"
+ram.build = "500M"
 ram.runtime = "50M"
 
 [install]
@@ -45,8 +45,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/omeka/omeka-s/releases/download/v4.0.1/omeka-s-4.0.1.zip"
-        sha256 = "2d682b77c95bd9d0ab0a846527b6351acaced571c293b637e731ff7f0193ba37"
+        url = "https://github.com/omeka/omeka-s/releases/download/v4.0.3/omeka-s-4.0.3.zip"
+        sha256 = "a9cdca0552c8e3c42fcee7c7a9686b0b04a01f55dfa5b47d223285c0e91660e3"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
