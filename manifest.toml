@@ -5,7 +5,7 @@ name = "Omeka S"
 description.en = "Web publication system for universities, galleries, libraries, archives, and museums"
 description.fr = "Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées"
 
-version = "4.0.4~ynh1"
+version = "4.1.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -48,8 +48,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/omeka/omeka-s/releases/download/v4.0.4/omeka-s-4.0.4.zip"
-        sha256 = "6162a2621a20e9110bf376b0866da407f4f8ea82932fcaaef467202f0d83d9f3"
+        url = "https://github.com/omeka/omeka-s/archive/refs/tags/v4.1.0.tar.gz"
+        sha256 = "515c835d89629743b06b7c8985e404ae832ff367eecfe3711420cb10d566a74a"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
