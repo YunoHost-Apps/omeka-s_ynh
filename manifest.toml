@@ -5,7 +5,7 @@ name = "Omeka S"
 description.en = "Web publication system for universities, galleries, libraries, archives, and museums"
 description.fr = "Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées"
 
-version = "4.0.4~ynh1"
+version = "4.1.0~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -20,8 +20,11 @@ code = "https://github.com/omeka/omeka-s"
 yunohost = ">= 11.2"
 architectures = "all"
 multi_instance = true
+
 ldap = false
+
 sso = false
+
 disk = "50M"
 ram.build = "500M"
 ram.runtime = "50M"
@@ -45,8 +48,8 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/omeka/omeka-s/releases/download/v4.0.4/omeka-s-4.0.4.zip"
-        sha256 = "6162a2621a20e9110bf376b0866da407f4f8ea82932fcaaef467202f0d83d9f3"
+        url = "https://github.com/omeka/omeka-s/releases/download/v4.1.0/omeka-s-4.1.0.zip"
+        sha256 = "bc0f87c07906c1aef1538b8cd1ab1ee9c3c3fe227ffea96b433a691fbd72d05f"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
@@ -57,7 +60,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "mariadb-server imagemagick php8.2-mysql php8.2-gd php8.2-mbstring php8.2-xml"
+    packages = "mariadb-server, imagemagick, php8.2-mysql, php8.2-gd, php8.2-mbstring, php8.2-xml"
 
     [resources.database]
     type = "mysql"

@@ -9,7 +9,7 @@ It shall NOT be edited by hand.
 
 [![Install Omeka S with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=omeka-s)
 
-*[Read this README is other languages.](./ALL_README.md)*
+*[Read this README in other languages.](./ALL_README.md)*
 
 > *This package allows you to install Omeka S quickly and simply on a YunoHost server.*  
 > *If you don't have YunoHost, please consult [the guide](https://yunohost.org/install) to learn how to install it.*
@@ -23,7 +23,7 @@ Omeka S is a web publication system for universities, galleries, libraries, arch
 - Connect to the semantic Web
 - Share with DPLA
 
-**Shipped version:** 4.0.4~ynh1
+**Shipped version:** 4.1.0~ynh1
 
 **Demo:** <https://omeka.org/s/download/#sandbox>
 
