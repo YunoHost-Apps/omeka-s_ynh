@@ -52,7 +52,7 @@ ynh_add_nginx_config
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="../conf/database.ini.default" --destination="$install_dir/config/database.ini"
+ynh_add_config --template="database.ini.default" --destination="$install_dir/config/database.ini"
 
 chmod 400 "$install_dir/config/database.ini"
 chown $app "$install_dir/config/database.ini"
