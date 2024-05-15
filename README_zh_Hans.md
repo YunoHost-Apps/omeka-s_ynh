@@ -3,7 +3,7 @@
 请勿手动编辑。
 -->
 
-# YunoHost 的 Omeka S
+# YunoHost 上的 Omeka S
 
 [![集成程度](https://dash.yunohost.org/integration/omeka-s.svg)](https://dash.yunohost.org/appci/app/omeka-s) ![工作状态](https://ci-apps.yunohost.org/ci/badges/omeka-s.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/omeka-s.maintain.svg)
 
@@ -23,7 +23,7 @@ Omeka S is a web publication system for universities, galleries, libraries, arch
 - Connect to the semantic Web
 - Share with DPLA
 
-**分发版本：** 4.1.0~ynh1
+**分发版本：** 4.1.0~ynh2
 
 **演示：** <https://omeka.org/s/download/#sandbox>
 

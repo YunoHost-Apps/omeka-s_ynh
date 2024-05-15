@@ -5,7 +5,7 @@ name = "Omeka S"
 description.en = "Web publication system for universities, galleries, libraries, archives, and museums"
 description.fr = "Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées"
 
-version = "4.1.0~ynh1"
+version = "4.1.0~ynh2"
 
 maintainers = ["eric_G"]
 
@@ -60,7 +60,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "mariadb-server, imagemagick, php8.2-mysql, php8.2-gd, php8.2-mbstring, php8.2-xml"
+    packages = "mariadb-server, imagemagick, php8.2-mysql, php8.2-gd, php8.2-mbstring, php8.2-xml, php8.2-imagick"
 
     [resources.database]
     type = "mysql"
