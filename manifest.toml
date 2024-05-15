@@ -60,7 +60,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "mariadb-server, imagemagick, php8.2-mysql, php8.2-gd, php8.2-mbstring, php8.2-xml"
+    packages = "mariadb-server, imagemagick, php8.2-mysql, php8.2-gd, php8.2-mbstring, php8.2-xml, php8.2-imagick"
 
     [resources.database]
     type = "mysql"

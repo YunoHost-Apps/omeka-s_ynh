@@ -58,6 +58,13 @@ chmod 400 "$install_dir/config/database.ini"
 chown $app "$install_dir/config/database.ini"
 
 #=================================================
+# TWEAK IMAGICK CONFIGURATION TO ALLOW PDF THUMBNAILS GENERATION 
+#=================================================
+ynh_script_progression --message="Tweaking imagemagick conf to allow generation of thumbnails PDF" --weight=1
+
+sed -i 's/^\s*<policy.*PDF.*/<!--\0-->/g' /etc/ImageMagick-*/policy.xml
+
+#=================================================
 # END OF SCRIPT
 #=================================================
 
