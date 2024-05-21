@@ -23,7 +23,7 @@ Omeka S is a web publication system for universities, galleries, libraries, arch
 - Connect to the semantic Web
 - Share with DPLA
 
-**Versión actual:** 4.1.0~ynh2
+**Versión actual:** 4.1.0~ynh3
 
 **Demo:** <https://omeka.org/s/download/#sandbox>
 
