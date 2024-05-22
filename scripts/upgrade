@@ -55,7 +55,7 @@ ynh_add_nginx_config
 #=================================================
 # TWEAK IMAGICK CONFIGURATION TO ALLOW PDF THUMBNAILS GENERATION 
 #=================================================
-ynh_script_progression --message="Tweaking imagemagick conf to allow generation of thumbnails PDF" --weight=1
+ynh_script_progression --message="Tweaking ImageMagick conf to allow generation of thumbnails PDF" --weight=1
 
 sed -i 's/^\s*<policy.*PDF.*/<!--\0-->/g' /etc/ImageMagick-*/policy.xml
 
