@@ -40,7 +40,7 @@ return [
                 'baseDn' => 'ou=users,dc=yunohost,dc=org',
                 'accountFilterFormat' => "(&(|(objectclass=posixAccount))(uid={{username}})(permission=cn=__APP__.main,ou=permission,dc=yunohost,dc=org))",
                 'accountCanonicalForm' => 4,
-                'accountDomainName' => 'example.com',
+                #'accountDomainName' => 'example.com',
             ],
         ],
     ],

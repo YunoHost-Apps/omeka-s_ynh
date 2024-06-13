@@ -46,6 +46,19 @@ chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
 
 #=================================================
+# ADD A CONFIGURATION
+#=================================================
+ynh_script_progression --message="Adding a configuration file..." --weight=1
+
+ynh_add_config --template="database.ini.default" --destination="$install_dir/config/database.ini"
+ynh_add_config --template="local.config.php" --destination="$install_dir/config/local.config.php"
+
+chmod 400 "$install_dir/config/database.ini"
+chown $app "$install_dir/config/database.ini"
+chmod 400 "$install_dir/config/local.config.php"
+chown $app "$install_dir/config/local.config.php"
+
+#=================================================
 # PHP-FPM CONFIGURATION
 #=================================================
 ynh_script_progression --message="Upgrading system configurations related to $app..." --weight=1
