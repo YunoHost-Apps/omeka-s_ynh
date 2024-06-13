@@ -39,7 +39,8 @@ ynh_script_progression --message="Upgrading source files..." --weight=1
 
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir" --keep="config/local.config.php config/database.ini modules themes files"
-ynh_setup_source --dest_dir="$install_dir/modules/" --source_id="csvimport" --full_replace=1
+ynh_setup_source --dest_dir="$install_dir/modules/" --source_id="csvimport"
+ynh_setup_source --dest_dir="$install_dir/modules/" --source_id="ldap"
 
 chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"

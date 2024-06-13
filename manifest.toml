@@ -58,6 +58,12 @@ ram.runtime = "50M"
         sha256 = "95aa91802ef497f6fb33e7bf1d129b041dc11ce1dc2eca4a6790a29becd592ad"
         autoupdate.strategy = "latest_github_tag"
 
+        [resources.sources.ldap]
+        in_subdir = false
+        url = "https://github.com/biblibre/omeka-s-module-Ldap/releases/download/v0.5.0/Ldap-0.5.0.zip"
+        sha256 = "5f0e36c7438f045cec3b7427fd8ebb5f8722b26043cc2028d9577400862becd9"
+        autoupdate.strategy = "latest_github_tag"
+
     [resources.system_user]
 
     [resources.install_dir]
