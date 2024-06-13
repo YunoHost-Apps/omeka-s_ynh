@@ -44,4 +44,22 @@ return [
             ],
         ],
     ],
+    'mail' => [
+        'transport' => [
+            'type' => 'smtp',
+            'options' => [
+                'name' => 'localhost',
+                'host' => '127.0.0.1',
+                'port' => 25, // 465 for 'ssl', and 587 for 'tls'
+                'connection_class' => 'smtp', // 'plain', 'login', or 'crammd5'
+                'connection_config' => [
+                    'username' => null,
+                    'password' => null,
+                    'ssl' => null, // 'ssl' or 'tls'
+                    'use_complete_quit' => true,
+                ],
+            ],
+        ],
+    ],
+
 ];
