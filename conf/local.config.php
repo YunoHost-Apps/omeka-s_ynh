@@ -30,20 +30,6 @@ return [
             'Omeka\File\Thumbnailer' => 'Omeka\File\Thumbnailer\ImageMagick',
         ],
     ],
-    'ldap' => [
-        'adapter_options' => [
-            'server1' => [
-                'host' => 'localhost',
-                'username' => 'ou=users,dc=yunohost,dc=org',
-                'password' => null,
-                'bindRequiresDn' => true,
-                'baseDn' => 'ou=users,dc=yunohost,dc=org',
-                'accountFilterFormat' => "(&(|(objectclass=posixAccount))(uid={{username}})(permission=cn=__APP__.main,ou=permission,dc=yunohost,dc=org))",
-                'accountCanonicalForm' => 4,
-                #'accountDomainName' => 'example.com',
-            ],
-        ],
-    ],
     'mail' => [
         'transport' => [
             'type' => 'smtp',
@@ -53,8 +39,8 @@ return [
                 'port' => 25, // 465 for 'ssl', and 587 for 'tls'
                 'connection_class' => 'smtp', // 'plain', 'login', or 'crammd5'
                 'connection_config' => [
-                    'username' => null,
-                    'password' => null,
+                    'username' => '__APP__',
+                    'password' => '__MAIL_PWD__',
                     'ssl' => null, // 'ssl' or 'tls'
                     'use_complete_quit' => true,
                 ],
