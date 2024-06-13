@@ -39,6 +39,7 @@ ynh_script_progression --message="Upgrading source files..." --weight=1
 
 # Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir" --keep="config/local.config.php config/database.ini modules themes files"
+ynh_setup_source --dest_dir="$install_dir/modules/" --source_id="csvimport"
 
 chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
@@ -55,7 +56,7 @@ ynh_add_nginx_config
 #=================================================
 # TWEAK IMAGICK CONFIGURATION TO ALLOW PDF THUMBNAILS GENERATION 
 #=================================================
-ynh_script_progression --message="Tweaking imagemagick conf to allow generation of thumbnails PDF" --weight=1
+ynh_script_progression --message="Tweaking ImageMagick conf to allow generation of thumbnails PDF" --weight=1
 
 sed -i 's/^\s*<policy.*PDF.*/<!--\0-->/g' /etc/ImageMagick-*/policy.xml
 

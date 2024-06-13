@@ -30,8 +30,8 @@ ynh_app_setting_set --app=$app --key=fpm_usage --value=$fpm_usage
 #=================================================
 ynh_script_progression --message="Setting up source files..." --weight=1
 
-# Download, check integrity, uncompress and patch the source from app.src
 ynh_setup_source --dest_dir="$install_dir"
+ynh_setup_source --dest_dir="$install_dir/modules/" --source_id="csvimport"
 
 chmod -R o-rwx "$install_dir"
 chown -R $app:www-data "$install_dir"
@@ -60,7 +60,7 @@ chown $app "$install_dir/config/database.ini"
 #=================================================
 # TWEAK IMAGICK CONFIGURATION TO ALLOW PDF THUMBNAILS GENERATION 
 #=================================================
-ynh_script_progression --message="Tweaking imagemagick conf to allow generation of thumbnails PDF" --weight=1
+ynh_script_progression --message="Tweaking ImageMagick conf to allow generation of thumbnails PDF" --weight=1
 
 sed -i 's/^\s*<policy.*PDF.*/<!--\0-->/g' /etc/ImageMagick-*/policy.xml
 
