@@ -34,13 +34,13 @@ return [
         'adapter_options' => [
             'server1' => [
                 'host' => 'localhost',
-                'username' => 'ou=users,dc=yunohost,dc=org',
+                'username' => 'uid',
                 'password' => null,
                 'bindRequiresDn' => true,
                 'baseDn' => 'ou=users,dc=yunohost,dc=org',
                 'accountFilterFormat' => "(&(|(objectclass=posixAccount))(uid={{username}})(permission=cn=__APP__.main,ou=permission,dc=yunohost,dc=org))",
                 'accountCanonicalForm' => 4,
-                #'accountDomainName' => 'example.com',
+                'accountDomainName' => '__DOMAIN__',
             ],
         ],
     ],
