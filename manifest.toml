@@ -56,7 +56,6 @@ ram.runtime = "50M"
         in_subdir = false
         url = "https://github.com/omeka-s-modules/CSVImport/releases/download/v2.6.1/CSVImport-2.6.1.zip"
         sha256 = "95aa91802ef497f6fb33e7bf1d129b041dc11ce1dc2eca4a6790a29becd592ad"
-        autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
