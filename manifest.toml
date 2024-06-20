@@ -5,7 +5,7 @@ name = "Omeka S"
 description.en = "Web publication system for universities, galleries, libraries, archives, and museums"
 description.fr = "Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées"
 
-version = "4.1.0~ynh3"
+version = "4.1.1~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -48,15 +48,14 @@ ram.runtime = "50M"
     [resources.sources]
 
         [resources.sources.main]
-        url = "https://github.com/omeka/omeka-s/releases/download/v4.1.0/omeka-s-4.1.0.zip"
-        sha256 = "bc0f87c07906c1aef1538b8cd1ab1ee9c3c3fe227ffea96b433a691fbd72d05f"
+        url = "https://github.com/omeka/omeka-s/releases/download/v4.1.1/omeka-s-4.1.1.zip"
+        sha256 = "b53c9eeb5e8479c6991de3c47197abac59be577884e7224f92f87758f2f14f7f"
         autoupdate.strategy = "latest_github_tag"
 
         [resources.sources.csvimport]
         in_subdir = false
         url = "https://github.com/omeka-s-modules/CSVImport/releases/download/v2.6.1/CSVImport-2.6.1.zip"
         sha256 = "95aa91802ef497f6fb33e7bf1d129b041dc11ce1dc2eca4a6790a29becd592ad"
-        autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
