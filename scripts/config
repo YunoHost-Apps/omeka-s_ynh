@@ -15,8 +15,8 @@ ynh_abort_if_errors
 # RETRIEVE ARGUMENTS
 #=================================================
 
-phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
-current_fpm_footprint=$(ynh_app_setting_get --app=$app --key=fpm_footprint)
+php_version=$(ynh_app_setting_get --key=php_version)
+current_fpm_footprint=$(ynh_app_setting_get --key=fpm_footprint)
 
 #=================================================
 # SPECIFIC GETTERS FOR TOML SHORT KEY
@@ -89,7 +89,7 @@ ynh_app_config_validate() {
 ynh_app_config_apply() {
     _ynh_app_config_apply
 
-    ynh_add_fpm_config --phpversion=$phpversion --usage=$fpm_usage --footprint=$fpm_footprint
+    ynh_add_fpm_config --phpversion=$php_version --usage=$fpm_usage --footprint=$fpm_footprint
 }
 
 ynh_app_config_run $1

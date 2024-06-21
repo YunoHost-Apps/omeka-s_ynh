@@ -1,34 +1,12 @@
 #!/bin/bash
 
-#=================================================
-# GENERIC START
-#=================================================
-# IMPORT GENERIC HELPERS
-#=================================================
-
 source _common.sh
 source /usr/share/yunohost/helpers
 
 #=================================================
-# RETRIEVE ARGUMENTS FROM THE MANIFEST
-#=================================================
-
-fpm_footprint="low"
-fpm_free_footprint=0
-fpm_usage="low"
-
-#=================================================
-# STORE SETTINGS FROM MANIFEST
-#=================================================
-
-ynh_app_setting_set --app=$app --key=fpm_footprint --value=$fpm_footprint
-ynh_app_setting_set --app=$app --key=fpm_free_footprint --value=$fpm_free_footprint
-ynh_app_setting_set --app=$app --key=fpm_usage --value=$fpm_usage
-
-#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --weight=1
+ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
 ynh_setup_source --dest_dir="$install_dir/modules/" --source_id="csvimport"
@@ -39,20 +17,20 @@ chown -R $app:www-data "$install_dir"
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
-ynh_script_progression --message="Adding system configurations related to $app ..." --weight=1
+ynh_script_progression "Adding system configurations related to $app ..."
 
 # Create a dedicated PHP-FPM config
-ynh_add_fpm_config --usage=$fpm_usage --footprint=$fpm_footprint
+ynh_config_add_phpfpm
 
 # Create a dedicated NGINX config
-ynh_add_nginx_config
+ynh_config_add_nginx
 
 #=================================================
 # ADD A CONFIGURATION
 #=================================================
-ynh_script_progression --message="Adding a configuration file..." --weight=1
+ynh_script_progression "Adding a configuration file..."
 
-ynh_add_config --template="database.ini.default" --destination="$install_dir/config/database.ini"
+ynh_config_add --template="database.ini.default" --destination="$install_dir/config/database.ini"
 
 chmod 400 "$install_dir/config/database.ini"
 chown $app "$install_dir/config/database.ini"
@@ -60,7 +38,7 @@ chown $app "$install_dir/config/database.ini"
 #=================================================
 # TWEAK IMAGICK CONFIGURATION TO ALLOW PDF THUMBNAILS GENERATION 
 #=================================================
-ynh_script_progression --message="Tweaking ImageMagick conf to allow generation of thumbnails PDF" --weight=1
+ynh_script_progression "Tweaking ImageMagick conf to allow generation of thumbnails PDF"
 
 sed -i 's/^\s*<policy.*PDF.*/<!--\0-->/g' /etc/ImageMagick-*/policy.xml
 
@@ -68,4 +46,4 @@ sed -i 's/^\s*<policy.*PDF.*/<!--\0-->/g' /etc/ImageMagick-*/policy.xml
 # END OF SCRIPT
 #=================================================
 
-ynh_script_progression --message="Installation of $app completed" --last
+ynh_script_progression "Installation of $app completed"
