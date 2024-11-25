@@ -5,7 +5,9 @@ Hij mag NIET handmatig aangepast worden.
 
 # Omeka S voor Yunohost
 
-[![Integratieniveau](https://dash.yunohost.org/integration/omeka-s.svg)](https://ci-apps.yunohost.org/ci/apps/omeka-s/) ![Mate van functioneren](https://ci-apps.yunohost.org/ci/badges/omeka-s.status.svg) ![Onderhoudsstatus](https://ci-apps.yunohost.org/ci/badges/omeka-s.maintain.svg)
+[![Integratieniveau](https://apps.yunohost.org/badge/integration/omeka-s)](https://ci-apps.yunohost.org/ci/apps/omeka-s/)
+![Mate van functioneren](https://apps.yunohost.org/badge/state/omeka-s)
+![Onderhoudsstatus](https://apps.yunohost.org/badge/maintained/omeka-s)
 
 [![Omeka S met Yunohost installeren](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=omeka-s)
 

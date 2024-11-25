@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Omeka S untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/omeka-s.svg)](https://ci-apps.yunohost.org/ci/apps/omeka-s/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/omeka-s.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/omeka-s.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/omeka-s)](https://ci-apps.yunohost.org/ci/apps/omeka-s/)
+![Status kerja](https://apps.yunohost.org/badge/state/omeka-s)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/omeka-s)
 
 [![Pasang Omeka S dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=omeka-s)
 

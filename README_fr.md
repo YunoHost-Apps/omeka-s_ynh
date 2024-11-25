@@ -5,7 +5,9 @@ Il NE doit PAS être modifié à la main.
 
 # Omeka S pour YunoHost
 
-[![Niveau d’intégration](https://dash.yunohost.org/integration/omeka-s.svg)](https://ci-apps.yunohost.org/ci/apps/omeka-s/) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/omeka-s.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/omeka-s.maintain.svg)
+[![Niveau d’intégration](https://apps.yunohost.org/badge/integration/omeka-s)](https://ci-apps.yunohost.org/ci/apps/omeka-s/)
+![Statut du fonctionnement](https://apps.yunohost.org/badge/state/omeka-s)
+![Statut de maintenance](https://apps.yunohost.org/badge/maintained/omeka-s)
 
 [![Installer Omeka S avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=omeka-s)
 

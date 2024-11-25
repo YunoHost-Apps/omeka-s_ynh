@@ -5,7 +5,9 @@
 
 # YunoHost 上的 Omeka S
 
-[![集成程度](https://dash.yunohost.org/integration/omeka-s.svg)](https://ci-apps.yunohost.org/ci/apps/omeka-s/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/omeka-s.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/omeka-s.maintain.svg)
+[![集成程度](https://apps.yunohost.org/badge/integration/omeka-s)](https://ci-apps.yunohost.org/ci/apps/omeka-s/)
+![工作状态](https://apps.yunohost.org/badge/state/omeka-s)
+![维护状态](https://apps.yunohost.org/badge/maintained/omeka-s)
 
 [![使用 YunoHost 安装 Omeka S](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=omeka-s)
 
