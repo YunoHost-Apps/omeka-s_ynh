@@ -5,7 +5,9 @@ No se debe editar a mano.
 
 # Omeka S para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/omeka-s.svg)](https://dash.yunohost.org/appci/app/omeka-s) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/omeka-s.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/omeka-s.maintain.svg)
+[![Nivel de integración](https://apps.yunohost.org/badge/integration/omeka-s)](https://ci-apps.yunohost.org/ci/apps/omeka-s/)
+![Estado funcional](https://apps.yunohost.org/badge/state/omeka-s)
+![Estado En Mantención](https://apps.yunohost.org/badge/maintained/omeka-s)
 
 [![Instalar Omeka S con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=omeka-s)
 
@@ -23,7 +25,7 @@ Omeka S is a web publication system for universities, galleries, libraries, arch
 - Connect to the semantic Web
 - Share with DPLA
 
-**Versión actual:** 4.1.0~ynh3
+**Versión actual:** 4.1.1~ynh2
 
 **Demo:** <https://omeka.org/s/download/#sandbox>
 
@@ -41,7 +43,7 @@ Omeka S is a web publication system for universities, galleries, libraries, arch
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/omeka-s_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/omeka-s_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 

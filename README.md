@@ -5,7 +5,9 @@ It shall NOT be edited by hand.
 
 # Omeka S for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/omeka-s.svg)](https://dash.yunohost.org/appci/app/omeka-s) ![Working status](https://ci-apps.yunohost.org/ci/badges/omeka-s.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/omeka-s.maintain.svg)
+[![Integration level](https://apps.yunohost.org/badge/integration/omeka-s)](https://ci-apps.yunohost.org/ci/apps/omeka-s/)
+![Working status](https://apps.yunohost.org/badge/state/omeka-s)
+![Maintenance status](https://apps.yunohost.org/badge/maintained/omeka-s)
 
 [![Install Omeka S with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=omeka-s)
 
@@ -23,7 +25,7 @@ Omeka S is a web publication system for universities, galleries, libraries, arch
 - Connect to the semantic Web
 - Share with DPLA
 
-**Shipped version:** 4.1.0~ynh3
+**Shipped version:** 4.1.1~ynh2
 
 **Demo:** <https://omeka.org/s/download/#sandbox>
 
