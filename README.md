@@ -12,7 +12,7 @@ Web publication system for universities, galleries, libraries, archives, and mus
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://omeka.org/s/)
 [![App Demo](https://img.shields.io/badge/App_Demo-blue?style=for-the-badge)](https://omeka.org/s/download/#sandbox)
-[![Version: 4.1.1~ynh3](https://img.shields.io/badge/Version-4.1.1~ynh3-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/omeka-s/)
+[![Version: 4.1.1~ynh4](https://img.shields.io/badge/Version-4.1.1~ynh4-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/omeka-s/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/omeka-s"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
