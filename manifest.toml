@@ -55,7 +55,7 @@ ram.runtime = "50M"
         [resources.sources.csvimport]
         in_subdir = false
         url = "https://github.com/omeka-s-modules/CSVImport/releases/download/v2.6.1/CSVImport-2.6.1.zip"
-        sha256 = "95aa91802ef497f6fb33e7bf1d129b041dc11ce1dc2eca4a6790a29becd592ad"
+        sha256 = "726b371bb5d00dd3fed0f87a8f54ee70f38fee37a7765f485830e310729340a5"
 
     [resources.system_user]
 
@@ -70,7 +70,7 @@ ram.runtime = "50M"
     api.show_tile = false
 
     [resources.apt]
-    packages = "mariadb-server, imagemagick, php8.3-mysql, php8.3-gd, php8.3-mbstring, php8.3-xml, php8.3-imagick"
+    packages = "mariadb-server, imagemagick, php8.4-mysql, php8.4-gd, php8.4-mbstring, php8.4-xml, php8.4-imagick"
 
     [resources.database]
     type = "mysql"
