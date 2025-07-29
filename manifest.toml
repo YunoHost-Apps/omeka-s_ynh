@@ -61,8 +61,6 @@ ram.runtime = "75M"
         autoupdate.strategy = "latest_github_release"
         autoupdate.asset = "^CSVImport-*\\.zip$"
 
-"^peertube-v.*\\.tar\\.xz$"
-
     [resources.system_user]
 
     [resources.install_dir]
