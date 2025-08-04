@@ -52,14 +52,14 @@ ram.runtime = "75M"
         sha256 = "b53c9eeb5e8479c6991de3c47197abac59be577884e7224f92f87758f2f14f7f"
         #autoupdate.strategy = "latest_github_tag"
         autoupdate.strategy = "latest_github_release"
-        autoupdate.asset = "^omeka-s-*\\.zip$"
+        autoupdate.asset = "^omeka-s-.*\\.zip$"
 
         [resources.sources.csvimport]
         in_subdir = false
         url = "https://github.com/omeka-s-modules/CSVImport/releases/download/v2.6.2/CSVImport-2.6.2.zip"
         sha256 = "726b371bb5d00dd3fed0f87a8f54ee70f38fee37a7765f485830e310729340a5"
         autoupdate.strategy = "latest_github_release"
-        autoupdate.asset = "^CSVImport-*\\.zip$"
+        autoupdate.asset = "^CSVImport-.*\\.zip$"
 
     [resources.system_user]
 
