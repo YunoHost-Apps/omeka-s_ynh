@@ -5,7 +5,7 @@ name = "Omeka S"
 description.en = "Web publication system for universities, galleries, libraries, archives, and museums"
 description.fr = "Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées"
 
-version = "4.1.1~ynh3"
+version = "4.1.1~ynh4"
 
 maintainers = ["eric_G"]
 
