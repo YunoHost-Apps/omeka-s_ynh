@@ -5,7 +5,7 @@ name = "Omeka S"
 description.en = "Web publication system for universities, galleries, libraries, archives, and museums"
 description.fr = "Système de publication Web pour les universités, les galeries, les bibliothèques, les archives et les musées"
 
-version = "4.1.1~ynh2"
+version = "4.1.1~ynh4"
 
 maintainers = ["eric_G"]
 
@@ -25,9 +25,9 @@ multi_instance = true
 ldap = false
 sso = false
 
-disk = "50M"
-ram.build = "500M"
-ram.runtime = "50M"
+disk = "90M"
+ram.build = "150M"
+ram.runtime = "75M"
 
 [install]
     [install.domain]
@@ -50,12 +50,16 @@ ram.runtime = "50M"
         [resources.sources.main]
         url = "https://github.com/omeka/omeka-s/releases/download/v4.1.1/omeka-s-4.1.1.zip"
         sha256 = "b53c9eeb5e8479c6991de3c47197abac59be577884e7224f92f87758f2f14f7f"
-        autoupdate.strategy = "latest_github_tag"
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset = "^omeka-s-.*\\.zip$"
 
         [resources.sources.csvimport]
         in_subdir = false
-        url = "https://github.com/omeka-s-modules/CSVImport/releases/download/v2.6.1/CSVImport-2.6.1.zip"
-        sha256 = "95aa91802ef497f6fb33e7bf1d129b041dc11ce1dc2eca4a6790a29becd592ad"
+        url = "https://github.com/omeka-s-modules/CSVImport/releases/download/v2.6.2/CSVImport-2.6.2.zip"
+        sha256 = "726b371bb5d00dd3fed0f87a8f54ee70f38fee37a7765f485830e310729340a5"
+        autoupdate.upstream = "https://github.com/omeka-s-modules/CSVImport"
+        autoupdate.strategy = "latest_github_release"
+        autoupdate.asset = "^CSVImport-.*\\.zip$"
 
         [resources.sources.ldap]
         in_subdir = false
@@ -77,7 +81,7 @@ ram.runtime = "50M"
     api.show_tile = false
 
     [resources.apt]
-    packages = "mariadb-server, imagemagick, php8.3-mysql, php8.3-gd, php8.3-mbstring, php8.3-xml, php8.3-imagick"
+    packages = "mariadb-server, imagemagick, php8.4-mysql, php8.4-gd, php8.4-mbstring, php8.4-xml, php8.4-imagick"
 
     [resources.database]
     type = "mysql"
