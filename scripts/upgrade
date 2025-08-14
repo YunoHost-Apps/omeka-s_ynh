@@ -3,8 +3,12 @@
 source _common.sh
 source /usr/share/yunohost/helpers
 
-ynh_app_setting_set_default --key=php_upload_max_filesize --value=256M
+#=================================================
+# ENSURE DOWNWARD COMPATIBILITY
+#=================================================
+ynh_script_progression "Ensuring downward compatibility..."
 
+ynh_app_setting_set_default --key=php_upload_max_filesize --value=256M
 ynh_app_setting_set_default --key=php_memory_limit --value=256M
 
 #=================================================
@@ -20,13 +24,8 @@ ynh_setup_source --dest_dir="$install_dir/modules/" --source_id="csvimport"
 #=================================================
 ynh_script_progression --message="Adding a configuration file..." --weight=1
 
-ynh_add_config --template="database.ini.default" --destination="$install_dir/config/database.ini"
-ynh_add_config --template="local.config.php" --destination="$install_dir/config/local.config.php"
-
-chmod 400 "$install_dir/config/database.ini"
-chown $app "$install_dir/config/database.ini"
-chmod 400 "$install_dir/config/local.config.php"
-chown $app "$install_dir/config/local.config.php"
+ynh_config_add --template="database.ini.default" --destination="$install_dir/config/database.ini"
+ynh_config_add --template="local.config.php" --destination="$install_dir/config/local.config.php"
 
 #=================================================
 # PHP-FPM CONFIGURATION
