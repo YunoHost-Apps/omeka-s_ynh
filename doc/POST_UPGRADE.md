@@ -1,1 +1,1 @@
-Omeka-s was upgrade, but you may need to finalize the upgrade by going to <https://__DOMAIN____PATH__/migrate> (it may just redirect you to the login page if no DB upgrade is needed or is already completed).
+Omeka-s was upgraded, but you may need to finalize the upgrade by going to <https://__DOMAIN____PATH__/migrate> (it may just redirect you to the login page if no DB upgrade is needed or is already completed).
