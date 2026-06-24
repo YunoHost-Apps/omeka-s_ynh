@@ -61,8 +61,15 @@ ram.runtime = "75M"
         autoupdate.strategy = "latest_github_release"
         autoupdate.asset = "^CSVImport-.*\\.zip$"
 
-    [resources.system_user]
+        [resources.sources.ldap]
+        in_subdir = false
+        url = "https://github.com/biblibre/omeka-s-module-Ldap/releases/download/v0.5.0/Ldap-0.5.0.zip"
+        sha256 = "5f0e36c7438f045cec3b7427fd8ebb5f8722b26043cc2028d9577400862becd9"
+        autoupdate.strategy = "latest_github_tag"
 
+    [resources.system_user]
+    allow_email = true
+    
     [resources.install_dir]
     group = "www-data:r-x"
     
